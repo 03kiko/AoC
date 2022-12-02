@@ -1,6 +1,6 @@
 def most_cal(input):
-    elf_cal=[]
     sum=0
+    elf_cal=[]
     elf_counter=0
     for x in input:
         if x!='\n':
@@ -14,4 +14,5 @@ def most_cal(input):
     for i in range(0,3):
         total_top_3+=elf_cal[i][1]
     return total_top_3
+
 print(most_cal(open('input.txt','r')))
