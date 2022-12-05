@@ -4,7 +4,8 @@ def day5_function_part1(input):
         cargo=[]
         for drawing in input:
             if ' 1' in drawing:
-                n_stacks=(len(drawing)-3)//4 #-3 is the len of ' \n'
+                n_stacks=(len(drawing))//4 
+    # Since there is \n at the end, the number of stacks is calculated like this.
                 break
         for i in range(n_stacks):
             cargo.append([])
