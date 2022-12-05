@@ -4,7 +4,7 @@ def day5_function_part1(input):
         cargo=[]
         for drawing in input:
             if ' 1' in drawing:
-                n_stacks=(len(drawing)+3)//4
+                n_stacks=(len(drawing)-3)//4 #-3 is the len of ' \n'
                 break
         for i in range(n_stacks):
             cargo.append([])
