@@ -1,8 +1,3 @@
-######################################
-# Most of the code was inspired in a #
-# youtuber that also solved this.    #
-######################################
-
 def day_8(input):
     def isvisible(grid,r,c):
         if c==0 or c==column-1 or r==0 or r==row-1:
